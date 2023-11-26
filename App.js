@@ -10,7 +10,7 @@ import Task from "./components/Task";
 import { TouchableOpacity } from "react-native";
 import { useState } from "react";
 
-export default function App() {
+const App = () => {
   const [task, setTask] = useState("");
   const [tasks, setTasks] = useState([
     "Ugotować obiad",
@@ -62,7 +62,7 @@ export default function App() {
       </KeyboardAvoidingView>
     </View>
   );
-}
+};
 
 const styles = StyleSheet.create({
   container: {
@@ -110,3 +110,5 @@ const styles = StyleSheet.create({
     color: "#55BCF6",
   },
 });
+
+export default App;
